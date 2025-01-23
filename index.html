@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate RPSLS Game!</title>
+
+    <!--Favicons by favicon.io-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
+
+    <!--Custom CSS link-->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div id="main-container">
+        <header>
+            <h1 class="heading">Rock, Paper, Scissors, Lizard, Spock</h1>
+        </header>
+
+        <main class="game-area">
+            <div>
+                <p>Make a choice:</p>
+                <button aria-label="Rock" data-choice="0" class="btn-control">Rock</button>
+                <button aria-label="Paper" data-choice="0" class="btn-control">Paper</button>
+                <button aria-label="Scissors" data-choice="0" class="btn-control">Scissors</button>
+                <button aria-label="Lizard" data-choice="0" class="btn-control">Lizard</button>
+                <button aria-label="Spock" data-choice="0" class="btn-control">Spock</button>
+            </div>
+            <div id="result">Result</div>
+            <div class="player">
+                <h2 class="scores">Player score: <span id="player-score">0</span></h2>
+                <img src="" alt="">
+            </div>
+            <div class="computer">
+                <h2 class="scores">Computer score: <span id="computer-score">0</span></h2>
+                <img src="" alt="">
+            </div>
+        </main>
+
+        <footer>
+            <h3 id="footer-h">The Rules</h3>
+            <p>Scissors cut paper | Paper covers rock | Rock crashes lizard | Lizard poisons Spock | Spock smashes
+                scissors
+                | Scissors decapitate lizard | Lizard eats paper | paper disproves Spock | Spock vaporizes rock | Rock
+                crushes scissors.</p>
+        </footer>
+    </div>
+</body>
+
+<script src="assets/jss/script.js"></script>
+
+</html>
