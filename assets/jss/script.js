@@ -27,14 +27,28 @@ document.addEventListener('DOMContentLoaded', function () {
     for (let button of buttons) {
         button.addEventListener('click', function () {
             let playerChoice = this.getAttribute('data-choice');
-            alert(`You chose ${playerChoice}`);
+            runGame(playerChoice);
         });
 
     };
 
 });
 
-function runGame() {
+/**
+ * Main game logic
+ */
+
+function runGame(playerChoice) {
+
+    playerImage.src = `assets/images/${choices[playerChoice]}.webp`;
+    playerImage.alt = choices[playerChoice];
+
+    let computerChoice = Math.floor(Math.random() * choices.length);
+
+    computerImage.src = `assets/images/${choices[computerChoice]}.webp`;
+    computerImage.alt = choices[computerChoice];
+
+    determineWinner(choices[playerChoice], choices[computerChoice]);
 
 }
 
