@@ -82,6 +82,13 @@ function incrementPlayerScore() {
 
 }
 
+/**
+ * Gets the current tally of the computer's score from DOM and increments it by 1
+ */
+
 function incrementComputerScore() {
+
+    let oldScore = parseInt(document.getElementById('computer-score').innerText);
+    document.getElementById('computer-score').innerText = ++oldScore;
 
 }
