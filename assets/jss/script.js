@@ -52,7 +52,22 @@ function runGame(playerChoice) {
 
 }
 
-function determineWinner() {
+/** 
+ * Gets the player and computer choices, determines the winner
+ * and displays the result
+ */
+
+function determineWinner(playerChoice, computerChoice) {
+
+    if (playerChoice === computerChoice) {
+        result.innerText = 'Its a tie!';
+    } else if (outcomes[playerChoice].includes(computerChoice)) {
+        result.innerText = 'Player wins!';
+        incrementPlayerScore();
+    } else {
+        result.innerText = 'Computer wins!';
+        incrementComputerScore();
+    }
 
 }
 
