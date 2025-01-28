@@ -69,9 +69,16 @@ function determineWinner(playerChoice, computerChoice) {
         incrementComputerScore();
     }
 
-}
+};
+
+/**
+ * Gets the current tally of the user's score from DOM and increments it by 1
+ */
 
 function incrementPlayerScore() {
+
+    let oldScore = parseInt(document.getElementById('player-score').innerText);
+    document.getElementById('player-score').innerText = ++oldScore;
 
 }
 
