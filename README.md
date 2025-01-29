@@ -3,7 +3,6 @@
 Ultimate Rock, scissors, paper, lizard, Spock, is a game designed for adults and children alike, to help them make decisions and have fun against an opponent who makes a truly random choices.
 The game is based on the classic rock, paper scissors game, but "enhanced" based on the expanded rules introduced by the popular "The Big Bang Theory" sitcom during episode 8 of season 2. 
 
-<img scr="">
 
 
 ## Features
@@ -12,7 +11,7 @@ The game is based on the classic rock, paper scissors game, but "enhanced" based
 
 - The header presents the title of the game, with a cartoonish font to make it playfull.
 
-<img scr="">
+
 
 
 - __Game Options__
@@ -20,7 +19,7 @@ The game is based on the classic rock, paper scissors game, but "enhanced" based
 - The game options include a clear instruction and then a choice of options to choose from: Rock, Paper, Scissors, Lizard, Spock. 
   The choices are buttons the player can click to make their choice.
 
-<img scr="">
+
 
 
 - __Game Result__
@@ -31,7 +30,7 @@ The game is based on the classic rock, paper scissors game, but "enhanced" based
 - The winner is announced under the choice buttons, and the score of the player or the computer is updated according to who won.
 - The score and the result is clear to the user, making it easy to understand who won and what the current score standings are.
 
-<img scr="">
+
 
 
 - __The Footer__
@@ -39,7 +38,7 @@ The game is based on the classic rock, paper scissors game, but "enhanced" based
 - The footer consists of the rules of the game.
 - The footer makes it easy for the player to understand the relations between the various choices presented to them.
 
-<img scr="">
+
 
 
 - __Future features to implement__
@@ -63,21 +62,21 @@ The game is based on the classic rock, paper scissors game, but "enhanced" based
 
 - The HTML code was validated using the official W3C validator with no errors.
 
-<img scr="">
+
 
 
 - __CSS__
 
 - The CSS code was validated using the official Jigsaw validator with no errors.
 
-<img scr="">
+
 
 
 - __JavaScript__
 
 - The JavaScript code was validated using the Jshint validator with no errors.
 
-<img scr="">
+
 
 
 - __Testing__
@@ -87,7 +86,7 @@ The game is based on the classic rock, paper scissors game, but "enhanced" based
 - I have confirmed that the accessibility, readability and performance of the game in both desktop and mobile devices is good, 
   using the lighthouse dev tools.
 
-<img scr="">
+
 
 
 ## Deployment
