@@ -119,3 +119,37 @@ p {
     margin-top: auto;
     font-size: 0.85rem;
 }
+
+/*Media query for screens with less height than 1010px*/
+@media screen and (max-height: 1010px) {
+    #game_over {
+        font-size: 1rem;
+    }
+
+    #player-image {
+        width: 60%;
+    }
+
+    #computer-image {
+        width: 60%;
+    }
+
+    .heading {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    #result {
+        font-size: 1rem;
+        margin-top: 15px;
+    }
+
+    #turns {
+        font-size: 1rem;
+    }
+
+    .scores {
+        font-size: 1rem;
+    }
+
+}
