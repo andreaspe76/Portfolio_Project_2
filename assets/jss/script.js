@@ -6,6 +6,7 @@ const buttons = document.getElementsByClassName('btn-control');
 const playerImage = document.getElementById('player-image');
 const computerImage = document.getElementById('computer-image');
 const result = document.getElementById('result');
+const gameOver = document.getElementById('game_over');
 const choices = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
 const outcomes = {
     rock: ['scissors', 'lizard'],
@@ -59,6 +60,7 @@ function determineWinner(playerChoice, computerChoice) {
     if (playerChoice === computerChoice) {
         result.innerText = 'Its a tie!';
         document.getElementById('main-container').style.backgroundColor = "rgb(177, 177, 177)";
+        decrementTurns();
     } else if (outcomes[playerChoice].includes(computerChoice)) {
         result.innerText = 'Player wins!';
         document.getElementById('main-container').style.backgroundColor = "rgb(125, 212, 125)";
@@ -77,6 +79,7 @@ function determineWinner(playerChoice, computerChoice) {
 function incrementPlayerScore() {
 
     document.getElementById('player-score').innerText = ++playerScore;
+    decrementTurns();
 
 }
 
@@ -86,5 +89,32 @@ function incrementPlayerScore() {
 function incrementComputerScore() {
 
     document.getElementById('computer-score').innerText = ++computerScore;
+    decrementTurns();
+
+}
+
+
+/**
+ * Gets the current tally of the turns remaining from DOM and decrements it by 1
+ */
+function decrementTurns() {
+
+    let oldTurns = parseInt(document.getElementById('turns-left').innerText);
+    document.getElementById('turns-left').innerText = --oldTurns;
+
+    if (oldTurns === 0) {
+        document.getElementById('turns-left').innerText = "There are no more turns left!";
+
+        if (playerScore > computerScore) {
+            gameOver.innerText = 'You won this round! 🎉';
+        } else if (playerScore < computerScore) {
+            gameOver.innerText = 'Awww!! The computer won this round! 😒';
+        } else {
+            gameOver.innerText = 'Balance has been restored. This round is a tie! ☯️';
+        }
+
+        showResetButton();
+
+    }
 
 }
