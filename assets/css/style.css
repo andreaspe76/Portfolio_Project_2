@@ -9,6 +9,12 @@ body {
     min-height: 100vh;
 }
 
+img {
+    border: #000000 2px solid;
+    box-shadow: #000000 2px 2px 2px;
+    border-radius: 5px;
+}
+
 /*Heading */
 .heading {
     text-align: center;
@@ -20,22 +26,43 @@ body {
     display: flex;
     flex-direction: column;
     flex: 1;
+    max-height: auto;
+    max-width: 800px;
+    align-self: center;
+    padding: 0 5vh 0 5vh;
 }
 
 .game-area p {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 .btn-control {
-    margin: auto;
     font-size: 1rem;
-    background-color: #b2a2e9;
-    color: rgb(0, 0, 0);
+    margin: 1vh auto;
+    background-color: #8d7ebe;
+    color: black;
     border-radius: 4px;
+    box-shadow: #000000 2px 2px 2px;
 }
 
 .btn-control:hover {
-    background-color: #927ed4;
+    background-color: #4f3999;
+    color: white;
+}
+
+#btn_reset {
+    font-size: 1rem;
+    margin: 3vh auto;
+    background-color: #8d7ebe;
+    color: black;
+    border-radius: 4px;
+    box-shadow: #000000 2px 2px 2px;
+    display: none;
+}
+
+#btn_reset:hover {
+    background-color: #4f3999;
+    color: white;
 }
 
 #result {
@@ -46,15 +73,17 @@ body {
 .player {
     float: left;
     width: 50%;
+    padding-bottom: 20px;
 }
 
 .computer {
     float: right;
     width: 50%;
+    padding-bottom: 20px;
 }
 
 .scores {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
 }
 
 #player-image {
@@ -63,6 +92,10 @@ body {
 
 #computer-image {
     width: 75%;
+}
+
+#game_over {
+    font-size: 3rem;
 }
 
 /*footer styles*/

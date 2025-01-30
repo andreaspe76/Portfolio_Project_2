@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <container id="main-container">
+    <div id="main-container">
 
         <!--Title of the game-->
         <header>
@@ -30,14 +30,14 @@
         <main class="game-area">
 
             <!--Options available to the player-->
-            <container>
+            <div>
                 <p>Make a choice:</p>
                 <button aria-label="Rock" data-choice="0" class="btn-control">Rock</button>
                 <button aria-label="Paper" data-choice="1" class="btn-control">Paper</button>
                 <button aria-label="Scissors" data-choice="2" class="btn-control">Scissors</button>
                 <button aria-label="Lizard" data-choice="3" class="btn-control">Lizard</button>
                 <button aria-label="Spock" data-choice="4" class="btn-control">Spock</button>
-            </container>
+            </div>
 
             <!--Result segment-->
             <div id="result">Result</div>
@@ -55,16 +55,17 @@
                 <img id="computer-image" src="assets/images/output-onlinetools_black_cropped.webp"
                     alt="Rock, paper, scissors, lizard, Spock">
             </section>
-            <section>
-                <!--Turns left before end of game-->
-                <h2 id="turns">Turns left: <span id="turns-left">10</span></h2>
-                <!--Final result of game-->
-                <h2 id="game_over"></h2>
-                <!--Button to reload the game-->
-                <button aria-label="reset" id="btn_reset">Reset</button>
-            </section>
+
         </main>
-        </main>
+
+        <section>
+            <!--Turns left before end of game-->
+            <h2 id="turns">Turns left: <span id="turns-left">10</span></h2>
+            <!--Final result of game-->
+            <p id="game_over"></p>
+            <!--Button to reload the game-->
+            <button aria-label="reset" id="btn_reset">Reset</button>
+        </section>
 
         <footer>
             <h3 id="footer-h">The Rules</h3>
@@ -73,7 +74,8 @@
                 | Scissors decapitate lizard | Lizard eats paper | Paper disproves Spock | Spock vaporizes rock | Rock
                 crushes scissors.</p>
         </footer>
-    </container>
+
+    </div>
 
     <script src="assets/jss/script.js"></script>
 
