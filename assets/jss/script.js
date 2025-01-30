@@ -71,7 +71,7 @@ function determineWinner(playerChoice, computerChoice) {
         incrementComputerScore();
     }
 
-};
+}
 
 /**
  * Gets the current tally of the user's score from DOM and increments it by 1
