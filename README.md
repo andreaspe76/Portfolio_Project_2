@@ -40,7 +40,57 @@ introduced by the popular "The Big Bang Theory" sitcom during episode 8 of seaso
 - The score and the result is clear to the user, making it easy to understand who won and what the current score standings are.
 
 <p align="center">
-<img src="assets/readme_images/game_results.png">
+<img src="assets/readme_images/computer_wins.png">
+</p>
+
+
+- __Background Color__
+
+- Using javascript, after each turn, the background color of the game area is changing, depending to who won. 
+- This makes it easier for the player to register the winner of each turn.
+
+<p align="center">
+<img src="assets/readme_images/player_wins.png">
+</p>
+
+<p align="center">
+<img src="assets/readme_images/computer_wins.png">
+</p>
+
+<p align="center">
+<img src="assets/readme_images/tie.png">
+</p>
+
+
+- __Turns left counter__
+
+- Under the choice images, there is a counter that shows the turns that are left until the end of the current game.
+- Using javascript, after each turn, one is detacted from the total.
+
+<p align="center">
+<img src="assets/readme_images/turns_left.png">
+</p>
+
+
+- __Winner of the game round__
+
+- After the 10 turns that each game round lasts are spent, the game ends.
+- Javascript compares the total wins of the player and the computer and declares the round winner.
+- The available messages cover all possible results. Player or computer victory and the result of a tie.
+
+<p align="center">
+<img src="assets/readme_images/round_winner.png">
+</p>
+
+
+- __Reset of gameboard button__
+
+- When the game ends, a reset button which is normally hidden appears using javascript.
+- The player choice buttons stop to function, so that the player cannot continue playing.
+- Upon pressing the reset button, the gameboard resets and is ready for another game of 10 turns.
+
+<p align="center">
+<img src="assets/readme_images/reset_btn.png">
 </p>
 
 
@@ -54,15 +104,16 @@ introduced by the popular "The Big Bang Theory" sitcom during episode 8 of seaso
 </p>
 
 
-- __Future features to implement__
-
-- I would like to add the ability for the game to end after 10 rounds.
-- I would also like to add a button so that the player can reset the score and the game board and restart the game.
-
-
 ## Bugs
 
 - __Solved bugs__
+
+- Initialy upon deployment, I saw that the h2 element containing the turns left counter, was not aligning correctly in the game area.
+  I solved the issue by moving the whole section containing the turns left counter, final winner message and reset button, outside the main element.
+
+- In the javascript, after the end of the game, while trying to compare the playerScore and computerScore variables, the code was not working.
+  I realised that because both variables were initialy declared inside their corresponding functions, the decrementTurns function, which in the event of no more turns left,
+  compares both variables and declares the game winner, could not call them. By moving them outside of their corresponding functions, in the beginning of the file under the constants, the problem was solved.
 
 - __Unfixed bugs__
 
@@ -134,6 +185,6 @@ The live link can be found here - https://andreaspe76.github.io/Portfolio_Projec
 
 ### Media
 
-- The photos used on the game, were found with a web search and fall under the free to use and share license.
+- The photos used for the game, were found with during a web search and fall under the free to use and share license.
 
 
