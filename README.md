@@ -152,7 +152,7 @@ introduced by the popular "The Big Bang Theory" sitcom during episode 8 of seaso
 - __Testing__
 
 - The game was tested using both desktop and mobile devices.
-- I have confirmed that the results are always coorect.
+- I have confirmed that the results are always correct.
 - I have confirmed that the accessibility, readability and performance of the game in both desktop and mobile devices is good, 
   using the lighthouse dev tools.
 
