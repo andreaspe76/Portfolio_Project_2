@@ -36,7 +36,7 @@ introduced by the popular "The Big Bang Theory" sitcom during episode 8 of seaso
 - When the player makes a choice, a corresponding image is shown on their side of the game board.
 - Then Javascript makes a random choice for the computer player, displays a corresponding image on the computer player's side of the game board,
   and decides who the winner is.
-- The winner is announced under the choice buttons, and the score of the player or the computer is updated according to who won.
+- The winner is announced under the choice buttons, and the score of the player or the computer is updated depending on who won.
 - The score and the result is clear to the user, making it easy to understand who won and what the current score standings are.
 
 <p align="center">
@@ -46,7 +46,7 @@ introduced by the popular "The Big Bang Theory" sitcom during episode 8 of seaso
 
 - __Background Color__
 
-- Using javascript, after each turn, the background color of the game area is changing, depending to who won. 
+- Using javascript, after each turn, the background color of the game area is changing, depending on who won. 
 - This makes it easier for the player to register the winner of each turn.
 
 <p align="center">
