@@ -26,7 +26,6 @@ img {
     display: flex;
     flex-direction: column;
     flex: 1;
-    max-height: auto;
     max-width: 800px;
     align-self: center;
     padding: 0 5vh 0 5vh;
