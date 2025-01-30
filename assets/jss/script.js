@@ -118,3 +118,20 @@ function decrementTurns() {
     }
 
 }
+
+
+/**
+ * Shows hidden reset button
+ * and resets the game when clicked
+ */
+function showResetButton() {
+
+    let resetButton = document.getElementById('btn_reset');
+    resetButton.style.display = 'block';
+    resetButton.addEventListener('click', function () {
+        window.location.reload();
+    });
+
+    disableButtons();
+
+}
