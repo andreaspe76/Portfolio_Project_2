@@ -135,3 +135,16 @@ function showResetButton() {
     disableButtons();
 
 }
+
+
+/**
+ * Disables the choice buttons
+ * when there are no more turns left
+ */
+function disableButtons() {
+
+    for (let button of buttons) {
+        button.disabled = true;
+    }
+
+}
