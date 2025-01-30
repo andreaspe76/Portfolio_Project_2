@@ -12,7 +12,7 @@ introduced by the popular "The Big Bang Theory" sitcom during episode 8 of seaso
 
 ## Features
 
-- __Header__
+## Header
 
 - The header presents the title of the game, with a cartoonish font to make it playfull.
 
@@ -21,7 +21,7 @@ introduced by the popular "The Big Bang Theory" sitcom during episode 8 of seaso
 </p>
 
 
-- __Game Options__
+## Game Options
 
 - The game options include a clear instruction and then a choice of options to choose from: Rock, Paper, Scissors, Lizard, Spock. 
   The choices are buttons the player can click to make their choice.
@@ -31,7 +31,7 @@ introduced by the popular "The Big Bang Theory" sitcom during episode 8 of seaso
 </p>
 
 
-- __Game Result__
+## Game Result
 
 - When the player makes a choice, a corresponding image is shown on their side of the game board.
 - Then Javascript makes a random choice for the computer player, displays a corresponding image on the computer player's side of the game board,
@@ -44,7 +44,7 @@ introduced by the popular "The Big Bang Theory" sitcom during episode 8 of seaso
 </p>
 
 
-- __Background Color__
+## Background Color
 
 - Using javascript, after each turn, the background color of the game area is changing, depending on who won. 
 - This makes it easier for the player to register the winner of each turn.
@@ -62,7 +62,7 @@ introduced by the popular "The Big Bang Theory" sitcom during episode 8 of seaso
 </p>
 
 
-- __Turns left counter__
+## Turns left counter
 
 - Under the choice images, there is a counter that shows the turns that are left until the end of the current game.
 - Using javascript, after each turn, one is detacted from the total.
@@ -72,7 +72,7 @@ introduced by the popular "The Big Bang Theory" sitcom during episode 8 of seaso
 </p>
 
 
-- __Winner of the game round__
+## Winner of the game round
 
 - After the 10 turns that each game round lasts are spent, the game ends.
 - Javascript compares the total wins of the player and the computer and declares the round winner.
@@ -83,7 +83,7 @@ introduced by the popular "The Big Bang Theory" sitcom during episode 8 of seaso
 </p>
 
 
-- __Reset of gameboard button__
+## Reset of gameboard button
 
 - When the game ends, a reset button which is normally hidden appears using javascript.
 - The player choice buttons stop to function, so that the player cannot continue playing.
@@ -94,7 +94,7 @@ introduced by the popular "The Big Bang Theory" sitcom during episode 8 of seaso
 </p>
 
 
-- __The Footer__
+## The Footer
 
 - The footer consists of the rules of the game.
 - The footer makes it easy for the player to understand the relations between the various choices presented to them.
@@ -106,7 +106,7 @@ introduced by the popular "The Big Bang Theory" sitcom during episode 8 of seaso
 
 ## Bugs
 
-- __Solved bugs__
+## Found and solved bugs
 
 - Initialy upon deployment, I saw that the h2 element containing the turns left counter, was not aligning correctly in the game area.
   I solved the issue by moving the whole section containing the turns left counter, final winner message and reset button, outside the main element.
@@ -115,14 +115,14 @@ introduced by the popular "The Big Bang Theory" sitcom during episode 8 of seaso
   I realised that because both variables were initialy declared inside their corresponding functions, the decrementTurns function, which in the event of no more turns left,
   compares both variables and declares the game winner, could not call them. By moving them outside of their corresponding functions, in the beginning of the file under the constants, the problem was solved.
 
-- __Unfixed bugs__
+## Unfixed bugs
 
 - There are no known unfixed bugs.
 
 
 ## HTML, CSS, JavaScript validation & testing
 
-- __HTML__
+## HTML
 
 - The HTML code was validated using the official W3C validator with no errors.
 
@@ -131,7 +131,7 @@ introduced by the popular "The Big Bang Theory" sitcom during episode 8 of seaso
 </p>
 
 
-- __CSS__
+## CSS
 
 - The CSS code was validated using the official Jigsaw validator with no errors.
 
@@ -140,7 +140,7 @@ introduced by the popular "The Big Bang Theory" sitcom during episode 8 of seaso
 </p>
 
 
-- __JavaScript__
+## JavaScript validation
 
 - The JavaScript code was validated using the Jshint validator with no errors.
 
@@ -149,7 +149,7 @@ introduced by the popular "The Big Bang Theory" sitcom during episode 8 of seaso
 </p>
 
 
-- __Testing__
+## Testing
 
 - The game was tested using both desktop and mobile devices.
 - I have confirmed that the results are always correct.
