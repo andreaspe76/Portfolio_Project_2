@@ -15,6 +15,8 @@ const outcomes = {
     lizard: ['spock', 'paper'],
     spock: ['scissors', 'rock']
 };
+let playerScore = parseInt(document.getElementById('player-score').innerText);
+let computerScore = parseInt(document.getElementById('computer-score').innerText);
 
 /**
  * Wait for the DOM to load before running the game
@@ -76,7 +78,6 @@ function determineWinner(playerChoice, computerChoice) {
 
 function incrementPlayerScore() {
 
-    let playerScore = parseInt(document.getElementById('player-score').innerText);
     document.getElementById('player-score').innerText = ++playerScore;
 
 }
@@ -87,7 +88,6 @@ function incrementPlayerScore() {
 
 function incrementComputerScore() {
 
-    let computerScore = parseInt(document.getElementById('computer-score').innerText);
     document.getElementById('computer-score').innerText = ++computerScore;
 
 }
