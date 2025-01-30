@@ -1,5 +1,5 @@
 /**
- * Declare constants for DOM elements
+ * Declare constants and variables for DOM elements
  * and possible choices
  */
 
@@ -76,8 +76,8 @@ function determineWinner(playerChoice, computerChoice) {
 
 function incrementPlayerScore() {
 
-    let oldScore = parseInt(document.getElementById('player-score').innerText);
-    document.getElementById('player-score').innerText = ++oldScore;
+    let playerScore = parseInt(document.getElementById('player-score').innerText);
+    document.getElementById('player-score').innerText = ++playerScore;
 
 }
 
@@ -87,7 +87,7 @@ function incrementPlayerScore() {
 
 function incrementComputerScore() {
 
-    let oldScore = parseInt(document.getElementById('computer-score').innerText);
-    document.getElementById('computer-score').innerText = ++oldScore;
+    let computerScore = parseInt(document.getElementById('computer-score').innerText);
+    document.getElementById('computer-score').innerText = ++computerScore;
 
 }
