@@ -186,6 +186,6 @@ The live link can be found here - https://andreaspe76.github.io/Portfolio_Projec
 
 ### Media
 
-- The photos used for the game, were found with during a web search and fall under the free to use and share license.
+- The photos used for the game, were found with a web search and fall under the free to use and share license.
 
 
