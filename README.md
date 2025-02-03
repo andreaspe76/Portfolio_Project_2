@@ -77,6 +77,7 @@ introduced by the popular "The Big Bang Theory" sitcom during episode 8 of seaso
 - After the 10 turns that each game round lasts are spent, the game ends.
 - Javascript compares the total wins of the player and the computer and declares the round winner.
 - The available messages cover all possible results. Player or computer victory and the result of a tie.
+- The message has a background color od a yellow hue, to make it more easy for the player to register the round result.
 
 <p align="center">
 <img src="assets/readme_images/round_winner.png">
