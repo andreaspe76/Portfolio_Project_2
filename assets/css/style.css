@@ -97,6 +97,11 @@ img {
     font-size: 3rem;
 }
 
+.highlight {
+    background-color: #ca9c38;
+    font-weight: bold;
+}
+
 /*footer styles*/
 footer {
     background-color: #000000;
