@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
+
 /**
  * Main game logic
  */
@@ -50,6 +51,7 @@ function runGame(playerChoice) {
     determineWinner(choices[playerChoice], choices[computerChoice]);
 
 }
+
 
 /** 
  * Gets the player and computer choices, determines the winner
@@ -73,6 +75,7 @@ function determineWinner(playerChoice, computerChoice) {
 
 }
 
+
 /**
  * Gets the current tally of the user's score from DOM and increments it by 1
  */
@@ -82,6 +85,7 @@ function incrementPlayerScore() {
     decrementTurns();
 
 }
+
 
 /**
  * Gets the current tally of the computer's score from DOM and increments it by 1
