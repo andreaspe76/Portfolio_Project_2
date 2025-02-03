@@ -61,17 +61,14 @@ function determineWinner(playerChoice, computerChoice) {
 
     if (playerChoice === computerChoice) {
         result.innerText = 'Its a tie!';
-        result.classList.add('highlight');
         document.getElementById('body').style.backgroundColor = "rgb(177, 177, 177)";
         decrementTurns();
     } else if (outcomes[playerChoice].includes(computerChoice)) {
         result.innerText = 'Player wins!';
-        result.classList.add('highlight');
         document.getElementById('body').style.backgroundColor = "rgb(125, 212, 125)";
         incrementPlayerScore();
     } else {
         result.innerText = 'Computer wins!';
-        result.classList.add('highlight');
         document.getElementById('body').style.backgroundColor = "rgb(238, 104, 115)";
         incrementComputerScore();
     }
