@@ -66,13 +66,13 @@ function determineWinner(playerChoice, computerChoice) {
         decrementTurns();
     } else if (outcomes[playerChoice].includes(computerChoice)) {
         result.innerText = 'Player wins!';
-        result.classList.add('body');
-        document.getElementById('main-container').style.backgroundColor = "rgb(125, 212, 125)";
+        result.classList.add('highlight');
+        document.getElementById('body').style.backgroundColor = "rgb(125, 212, 125)";
         incrementPlayerScore();
     } else {
         result.innerText = 'Computer wins!';
-        result.classList.add('body');
-        document.getElementById('main-container').style.backgroundColor = "rgb(238, 104, 115)";
+        result.classList.add('highlight');
+        document.getElementById('body').style.backgroundColor = "rgb(238, 104, 115)";
         incrementComputerScore();
     }
 
